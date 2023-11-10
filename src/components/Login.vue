@@ -1,7 +1,7 @@
 <template>
   <div class="LoginApp">
     <el-card class="box-card">
-      <img class="logo" alt="OFPZL Logo" src="./img/Logo.png" />
+      <img class="logo" alt="OFPZL Logo" src="../assets/logo.png" />
       <h3>DeskPuzzle Mail</h3>
       <el-input
         type="email"
@@ -18,7 +18,9 @@
       >
       </el-input>
       <div class="separacion"></div>
-      <el-button class="btn" type="success">Login</el-button>
+      <router-link to="/email">
+        <el-button class="btn" type="success">Login</el-button>
+      </router-link>
     </el-card>
   </div>
 </template>
@@ -48,6 +50,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20vh;
 }
 .logo {
   width: 30%;

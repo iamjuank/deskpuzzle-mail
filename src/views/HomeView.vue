@@ -1,19 +1,22 @@
 <template>
-  <div id="app">
-    <navMenu />
+  <div class="home">
     <LoginApp />
   </div>
 </template>
 
 <script>
+// @ is an alias to /src
 import LoginApp from "@/components/Login.vue";
-import navMenu from "@/components/navMenu.vue";
 
 export default {
-  name: "LoginApp",
+  name: "HomeView",
   components: {
     LoginApp,
-    navMenu,
   },
 };
 </script>
+<style scoped>
+.home {
+  margin-top: 3%;
+}
+</style>
