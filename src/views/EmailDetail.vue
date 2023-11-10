@@ -9,13 +9,27 @@
 
 <script>
 export default {
+  name: "EmailDetail",
   props: {
     email: {
       type: Object,
       required: true
     }
+  },
+  data() {
+    return {
+      records: [
+        {
+          id: 1,
+          subject: "Introducing El-Mail",
+          from: "team@el-mail.com",
+          to: "john.doe@gmail.com",
+          body: "Dear John, ..."
+        }
+      ]
+    };
   }
-}
+};
 </script>
 
 <style scoped>

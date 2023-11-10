@@ -11,12 +11,8 @@ import LoginApp from "@/components/Login.vue";
 export default {
   name: "HomeView",
   components: {
-    LoginApp,
-  },
+    LoginApp
+  }
 };
 </script>
-<style scoped>
-.home {
-  margin-top: 3%;
-}
-</style>
+<style scoped></style>

@@ -9,6 +9,5 @@
   display: grid;
   position: relative;
   justify-content: center;
-  margin-top: 5%;
 }
 </style>

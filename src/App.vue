@@ -7,12 +7,14 @@
         <router-link to="/about">About</router-link>
       </div>
     </nav>
-    <router-view />
+    <div class="main-container">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <style>
-#app {
+@import "./assets/global.css" #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -60,5 +62,10 @@ nav a.router-link-exact-active {
 .options {
   margin-left: auto;
   margin-right: 10px;
+}
+.main-container {
+  margin-top: 60px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 </style>

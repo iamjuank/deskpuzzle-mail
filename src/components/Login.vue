@@ -1,26 +1,28 @@
 <template>
   <div class="LoginApp">
     <el-card class="box-card">
-      <img class="logo" alt="OFPZL Logo" src="../assets/logo.png" />
-      <h3>DeskPuzzle Mail</h3>
-      <el-input
-        type="email"
-        placeholder="email@example.com"
-        v-model="input"
-        clearable
-      ></el-input>
-      <div class="separacion"></div>
-      <el-input
-        type="password"
-        placeholder="Password"
-        v-model="password"
-        clearable
-      >
-      </el-input>
-      <div class="separacion"></div>
-      <router-link to="/email">
-        <el-button class="btn" type="success">Login</el-button>
-      </router-link>
+      <div class="center-content">
+        <img class="logo" alt="OFPZL Logo" src="../assets/logo.png" />
+        <h3>DeskPuzzle Mail</h3>
+        <el-input
+          type="email"
+          placeholder="email@example.com"
+          v-model="input"
+          clearable
+        ></el-input>
+        <div class="separacion"></div>
+        <el-input
+          type="password"
+          placeholder="Password"
+          v-model="password"
+          clearable
+        >
+        </el-input>
+        <div class="separacion"></div>
+        <router-link to="/email">
+          <el-button class="btn" type="success">Login</el-button>
+        </router-link>
+      </div>
     </el-card>
   </div>
 </template>
@@ -31,13 +33,13 @@ export default {
     return {
       input: "",
       password: "",
-      checked: false,
+      checked: false
     };
   },
   name: "LoginApp",
   props: {
-    msg: String,
-  },
+    msg: String
+  }
 };
 </script>
 
@@ -46,11 +48,10 @@ export default {
   width: 480px;
 }
 .LoginApp {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20vh;
+  height: 80vh;
 }
 .logo {
   width: 30%;
@@ -62,5 +63,11 @@ export default {
 }
 .separacion {
   height: 10px;
+}
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
